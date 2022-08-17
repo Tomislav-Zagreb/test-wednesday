@@ -1,0 +1,36 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 90%;
+  padding-inline: 5%;
+}
+
+.formContainer > * {
+  font-family: inherit;
+  outline: 0;
+  border: 0;
+  padding: 0.75rem 1.25rem;
+}
+
+.formContainer input {
+  flex: 0.85;
+  background-color: whitesmoke;
+  color: black;
+  font-size: clamp(0.5rem, 3vw, 1rem);
+}
+
+.formContainer input::placeholder {
+  color: grey;
+  letter-spacing: 2px;
+}
+
+.formContainer button {
+  flex: 0.15;
+  background-color: rgb(146, 219, 255);
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}

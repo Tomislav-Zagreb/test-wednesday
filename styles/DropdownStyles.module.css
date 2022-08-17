@@ -1,0 +1,20 @@
+.dropContainer {
+  position: absolute;
+  top: 50px;
+  left: 5%;
+  background-color: rgba(146, 219, 255, 0.95);
+  color: black;
+  padding: 5rem 4rem;
+  z-index: 9;
+  border-radius: 10px;
+  border: 3px solid white;
+}
+
+.dropContainer button {
+  padding: 0rem 1rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: rgb(171, 28, 28);
+  cursor: pointer;
+}

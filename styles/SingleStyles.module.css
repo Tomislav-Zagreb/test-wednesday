@@ -1,0 +1,74 @@
+.articleContainer {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  position: relative;
+}
+
+.articleContainer > a {
+  flex: 1;
+}
+
+.articleContainer img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  filter: drop-shadow(0 0 0.5rem grey);
+  border-radius: 10px;
+}
+
+.textBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.textBox h1 {
+  cursor: pointer;
+}
+
+.fullLink {
+  background-color: rgb(146, 219, 255);
+  color: black;
+  border: 3px solid rgb(146, 219, 255);
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: all 0.25s cubic-bezier(0.35, 0.13, 0.64, 0.89);
+}
+
+.fullLink:hover {
+  color: white;
+  background-color: black;
+}
+
+.deleteIcon {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  transform: scale(0);
+  background-color: rgb(216, 32, 32);
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0.25rem;
+  box-shadow: 0 0 0.5rem white;
+}
+
+.articleContainer:hover .deleteIcon {
+  transform: scale(3);
+}
+
+@media (max-width: 800px) {
+  .articleContainer {
+    flex-direction: column;
+  }
+
+  .articleContainer img {
+    width: 100%;
+  }
+}

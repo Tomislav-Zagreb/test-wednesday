@@ -1,0 +1,49 @@
+@font-face {
+  font-family: playfair;
+  src: url("../public/Playfair_Display.zip");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: playfair;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+    min-height: 100vh;
+  }
+}
+
+::selection {
+  background-color: rgb(146, 219, 255);
+  color: black;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(146, 219, 255);
+  border-radius: 10px;
+}
